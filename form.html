@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicon/favicon-32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicon/16.png">
+  <link rel="apple-touch-icon" href="img/favicon/32.png">
+  <title>Форма Отзыва</title>
+</head>
+
+<body class="page__body">
+  <header class="main-header">
+    <a class="main-header__logo" href="index.html">
+      <picture>
+        <source media="(min-width:1200px)" srcset="img/logotype-desktop.svg">
+        <source media="(min-width:768px)" srcset="img/logotype-tablet.svg">
+        <img class="main-header__logo-picture" src="img/logo-sedona.svg" width="101" height="84" alt="Логотип Седоны">
+      </picture>
+    </a>
+    <nav class="main-header__main-nav main-nav--closed main-nav">
+      <button class="main-nav__nav-toggle nav-toggle" aria-label="Открыть меню"></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__nav-list nav-list list">
+          <li class="nav-list__item site-list__item--active">
+            <a class="nav-list__nav-link link" href="index.html">Главная</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__nav-link link" href="catalog.html">Фото и видео</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__nav-link link" href="form.html">Форма Отзыва</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__nav-link link" href="catalog.html">HTML ACADEMY</a>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <h1 class="visually-hidden">Форма отзыва Седоны</h1>
+    <header class="page-main__intro-header intro-header">
+      <div class="intro-header__main-photo intro-header__main-photo--smaller">
+        <img class="intro-header__main-photo-text" src="img/text-sedona.svg"
+          width="229" height="39" alt="">
+      </div>
+
+      <div class="intro-header__wrapper">
+        <h2 class="intro-header__main-title main-title">Оставьте свой отзыв
+        </h2>
+        <p class="intro-header__header-desc main-text">Помогите нашим отелям стать лучше!Оставьте отзыв о них,<br>а также о посещенных вами достопримечательностях
+        </p>
+      </div>
+    </header>
+
+    <section class="form-review">
+      <h2 class="visually-hidden">Можете написать оставить свой отзыв здесь</h2>
+      <form class="form-review__form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="form-review__form-inner-part form-inner-part">
+          <legend class="form-inner-part__title main-title">Представьтесь:</legend>
+          <div class="form-inner-part__name-section name-section">
+            <label class="name-section__label-name label-name" for="name">Имя*:</label>
+            <input class="name-section__input-name input-name" type="text" name="name" id="name" placeholder="Петр">
+          </div>
+          <div class="form-inner-part__name-section name-section">
+            <label class="name-section__label-name label-name" for="surname">Фамилия*:</label>
+            <input class="name-section__input-name input-name" type="text" name="surname" id="surname"
+              placeholder="Иванов">
+          </div>
+          <div class="form-inner-part__name-section name-section">
+            <label class="name-section__label-name label-name" for="middle-name">Отчество:</label>
+            <input class="name-section__input-name input-name" type="text" name="middle-name" id="middle-name"
+              placeholder="Александрович">
+          </div>
+        </fieldset>
+        <fieldset class="form-review__form-inner-part form-inner-part form-inner-part--contact">
+          <legend class="form-inner-part__title main-title">Контактная информация:</legend>
+          <div class="form-inner-part__contact-section contact-section">
+            <label class="contact-section__label-contact label-contact" for="phone">Контактный телефон*:</label>
+            <input class="contact-section__input-contact input-contact--tel" type="text" name="phone" id="phone"
+              placeholder="Введите телефон">
+          </div>
+          <div class="form-inner-part__contact-section contact-section">
+            <label class="contact-section__label-contact label-contact" for="email">Электронная почта*:</label>
+            <input class="contact-section__input-contact input-contact--email" type="text" name="email" id="email"
+              placeholder="Введите e-mail">
+          </div>
+        </fieldset>
+        <fieldset class="form-review__form-inner-part form-review__form-inner-part--review-score-section form-inner-part">
+          <legend class="form-inner-part__title main-title">Ваше общее впечатление:</legend>
+          <div class="form-inner-part__review-score-section review-score-section">
+            <input class="visually-hidden review-score-section__input-score" type="radio" name="input-score" value="positive"
+              id="review-positive" checked>
+            <label class="review-score-section__label-review-score label-review-score label-review-score--radio" for="review-positive">Скорее
+              положительное</label>
+          </div>
+          <div class="form-inner-part__review-score-section review-score-section">
+            <input class="visually-hidden review-score-section__input-score" type="radio" name="input-score" value="negative"
+              id="review-nagative">
+            <label class="review-score-section__label-review-score label-review-score" for="review-nagative">Скорее
+              отрицательное</label>
+          </div>
+          <div class="form-inner-part__review-score-section review-score-section">
+            <input class="visually-hidden review-score-section__input-score" type="radio" name="input-score" value="indefinite"
+              id="review-neutral">
+            <label class="review-score-section__label-review-score label-review-score" for="review-neutral">Затрудняюсь
+              ответить</label>
+          </div>
+        </fieldset>
+        <fieldset class="form-review__form-inner-part  form-inner-part form-inner-part--visited-place-section">
+          <legend class="form-inner-part__title main-title">Посещенные<br>достопримечательности:</legend>
+          <div class="form-inner-part__visited-place-section visited-place-section">
+            <input class="visually-hidden visited-place-section__input-place" type="checkbox" name="devil-bridge"
+              id="devil-bridge" checked>
+            <label class="visited-place-section__label-place label-place" for="devil-bridge">Мост Дьявола</label>
+          </div>
+          <div class="form-inner-part__visited-place-section visited-place-section">
+            <input class="visually-hidden visited-place-section__input-place" type="checkbox" name="mount-bell"
+              id="mount-bell" checked>
+            <label class="visited-place-section__label-place label-place" for="mount-bell">Гора-Колокол</label>
+          </div>
+          <div class="form-inner-part__visited-place-section visited-place-section">
+            <input class="visually-hidden visited-place-section__input-place" type="checkbox" name="slide-park"
+              id="slide-park" checked>
+            <label class="visited-place-section__label-place label-place" for="slide-park">Слайд-парк</label>
+          </div>
+          <div class="form-inner-part__visited-place-section visited-place-section">
+            <input class="visually-hidden visited-place-section__input-place" type="checkbox" name="red-cliffs"
+              id="red-cliffs">
+            <label class="visited-place-section__label-place label-place" for="red-cliffs">Красные скалы</label>
+          </div>
+        </fieldset>
+        <div class="form-inner-part__text-review-section form-inner-part text-review-section">
+          <label class="form-inner-part__title main-title" for="text-review">Опишите свои эмоции:</label>
+          <textarea name="text-review" id="text-review" placeholder="Опишите подробно все свои восторги"
+            rows="6"></textarea>
+        </div>
+        <button class="form-review__button button" type="submit">Отправить отзыв</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <b class="page-footer__hashtag main-title main-title--bigger">#visitSEDONA</b>
+    </div>
+    <div class="page-footer__wrapper ">
+      <ul class="page-footer__social-list social-list list">
+        <li class="social-list__item">
+          <a class="social-list__social-link social-link social-link--vkontakte" href="#"
+            aria-label="Мы в Вконтакте"></a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__social-link social-link social-link--facebook" href="#" aria-label="Мы в Фейсбуке"></a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__social-link social-link social-link--instagram" href="#"
+            aria-label="Мы в Инстаграме"></a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__wrapper copyright">
+      <b class="copyright__text main-text main-text--the-biggest main-text--black">Разработано</b>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип HTML Академии">
+        <svg width="27" height="35" fill="none">
+          <path
+            d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z"
+            fill="#000" /></svg>
+      </a>
+    </div>
+
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

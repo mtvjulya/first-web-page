@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicon/favicon-32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicon/16.png">
+  <link rel="apple-touch-icon" href="img/favicon/32.png">
+  <title>Sedona</title>
+</head>
+
+<body class="page__body">
+  <header class="main-header">
+    <a class="main-header__logo" href="index.html">
+      <picture>
+        <source media="(min-width:1200px)" srcset="img/logotype-desktop.svg">
+        <source media="(min-width:768px)" srcset="img/logotype-tablet.svg">
+        <img class="main-header__logo-picture" src="img/logo-sedona.svg" width="101" height="84" alt="Логотип Седоны">
+      </picture>
+    </a>
+    <nav class="main-header__main-nav main-nav--closed main-nav">
+      <button class="main-nav__nav-toggle nav-toggle" aria-label="Открыть меню"></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__nav-list nav-list list">
+          <li class="nav-list__item site-list__item--active">
+            <a class="nav-list__nav-link link">Главная</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__nav-link link" href="catalog.html">Фото и видео</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__nav-link link" href="form.html">Форма Отзыва</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__nav-link link" href="catalog.html">HTML ACADEMY</a>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <h1 class="visually-hidden">Фото и видео Седоны</h1>
+    <header class="page-main__intro-header intro-header">
+      <div class="intro-header__main-photo intro-header__main-photo--smaller">
+        <img class="intro-header__main-photo-text" src="img/text-sedona.svg" width="229" height="39" alt="">
+      </div>
+
+      <div class="intro-header__wrapper">
+
+        <h2 class="intro-header__main-title main-title">Фото и видео</h2>
+        <p class="intro-header__header-desc main-text main-text--bigger">Не можете решиться на путешествие<br> из-за
+          курса? Фотографии помогут
+          вам<br> забыть о политике и экономике.</p>
+      </div>
+    </header>
+
+    <section class="photo-gallery">
+      <h2 class="visually-hidden">Фото галерея</h2>
+      <ul class="photo-gallery__photo-gallery-list photo-gallery-list list">
+        <li class="photo-gallery__photo-item photo-item">
+          <figure>
+            <picture>
+              <source media="(min-width:1200px)"
+                srcset="img/catalog/non-native_spaces_desktop.jpg 1x, img/catalog/non-native_spaces_desktop@2.jpg 2x">
+              <source media="(min-width:768px)"
+                srcset="img/catalog/non-native_spaces_tablet.jpg 1x, img/catalog/non-native_spaces_tablet@2.jpg 2x">
+              <source media="(min-width:1200px)"
+                srcset="img/catalog/non-native_spaces_mobile.jpg 1x, img/catalog/non-native_spaces_mobile@2.jpg 2x">
+              <img class="photo-gallery_picture" src="img/catalog/non-native_spaces_mobile.jpg"
+                srcset="img/catalog/non-native_spaces_mobile@2.jpg 2x" width="280" height="280"
+                alt="Закат на въезде в город">
+            </picture>
+            <figcaption><span>Неродные просторы</span>
+              Автор фото: Борис
+            </figcaption>
+          </figure>
+          <button class="photo-item__button-like button-like" aria-label="Поставить лайк"></button>
+          <output name="likes-result">1350</output>
+        </li>
+        <li class="photo-gallery__photo-item photo-item">
+          <figure>
+            <img src="img/catalog/local_plant.jpg" width="280" height="280" alt="">
+            <figcaption><span>Местная растительность</span>
+              Автор фото: Сергей
+            </figcaption>
+          </figure>
+          <button class="photo-item__button-like button-like" aria-label="Поставить лайк"></button>
+          <output name="likes-result">143</output>
+        </li>
+        <li class="photo-gallery__photo-item photo-item">
+          <figure>
+            <img src="img/catalog/road_to_the_north.jpg" width="280" height="280" alt="">
+            <figcaption><span>Дорога на север</span>
+              Автор фото: Петр
+            </figcaption>
+          </figure>
+          <button class="photo-item__button-like button-like" aria-label="Поставить лайк"></button>
+          <output name="likes-result">96</output>
+        </li>
+        <li class="photo-gallery__photo-item photo-item">
+          <figure>
+            <img src="img/catalog/devil_bridge.jpg" width="280" height="280" alt="">
+            <figcaption><span>Мост дьявола</span>
+              Автор фото: Антон
+            </figcaption>
+          </figure>
+          <button class="photo-item__button-like button-like" aria-label="Поставить лайк"></button>
+          <output name="likes-result">254</output>
+        </li>
+      </ul>
+    </section>
+
+    <section class="video">
+      <div class="video__description-wrapper">
+        <h2 class="video__main-title main-title main-title--bigger">Все еще сомневаетесь?</h2>
+        <p class="video__video-desc main-text main-text--bigger">Смотрите видеопрезентацию и<br>скорее за билетами, пока
+          они не<br>подорожали в очередной раз!</p>
+      </div>
+
+      <a class="video__link" href="#"><img src="img/catalog/video.jpg" alt="ссылка на видео" width="320"
+          height="201"></a>
+      <div class="video__video-controls-wrapper video-controls-wrapper">
+        <div class="video-controls-wrapper__range range">
+          <div class="range__bar bar"></div>
+        </div>
+        <div class="video__controls-wrapper">
+          <button class="replay" aria-label="Повтор"></button>
+          <button class="subtitles" aria-label="Субтитры"></button>
+          <button class="fullscreen" aria-label="Полный экран"></button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <b class="page-footer__hashtag main-title main-title--bigger">#visitSEDONA</b>
+    </div>
+    <div class="page-footer__wrapper ">
+      <ul class="page-footer__social-list social-list list">
+        <li class="social-list__item">
+          <a class="social-list__social-link social-link social-link--vkontakte" href="#"
+            aria-label="Мы в Вконтакте"></a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__social-link social-link social-link--facebook" href="#" aria-label="Мы в Фейсбуке"></a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__social-link social-link social-link--instagram" href="#"
+            aria-label="Мы в Инстаграме"></a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__wrapper copyright">
+      <b class="copyright__text main-text main-text--the-biggest main-text--black">Разработано</b>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип HTML Академии">
+        <svg width="27" height="35" fill="none">
+          <path
+            d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z"
+            fill="#000" /></svg>
+      </a>
+    </div>
+
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
